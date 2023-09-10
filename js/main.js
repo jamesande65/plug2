@@ -37,9 +37,7 @@ function toggleSearch() {
 
 // Scroll to top button show/hide
 function toggleScrollToTop() {
-	let scrollHeight = $(document).height();
-	let scrollPosition = $(window).height() + $(window).scrollTop();
-	if (scrollPosition >= scrollHeight - 100) {
+	if (window.scrollY >= 80) {
 		$('.js-scroll-top').addClass('active');
 	} else {
 		$('.js-scroll-top').removeClass('active');
