@@ -455,7 +455,7 @@ html {
 }
 
 body {
-	font: 12px/1.2 Arial, Helvetica, sans-serif;
+	font: 12px/1.2 "Montserrat", Helvetica, sans-serif;
 	min-height: 100%;
 	height: 100%;
 	min-width: 320px;
@@ -463,7 +463,6 @@ body {
 	color: #000;
 	background: #000;
 	padding-top: 80px;
-	font-family: 'Montserrat', sans-serif;
 }
 
 @media screen and (max-width: 991px) {
@@ -473,8 +472,14 @@ body {
 }
 
 a {
-	color: #368013;
-	text-decoration: none;
+	color: var(--main-accent-color);
+}
+
+@media screen and (min-width: 992px) {
+	a:hover {
+		color: var(--additional-accent-color);
+		text-decoration: none;
+	}
 }
 
 input {
@@ -496,12 +501,12 @@ input {
 }
 
 * ::-moz-selection {
-	background: #1d5509;
+	background: var(--additional-accent-color);
 	color: #fff;
 }
 
 * ::selection {
-	background: #1d5509;
+	background: var(--additional-accent-color);
 	color: #fff;
 }
 
@@ -617,9 +622,13 @@ button {
 	padding: 1rem;
 	color: #fff;
 	position: relative;
-	width: 159px;
-	height: 74px;
-	background: url("../images/btn-sprite.webp") -189px -10px;
+	max-width: 250px;
+	border-radius: 30px;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: .1px;
+	background-color: var(--main-accent-color);
+	transition: all .8s ease;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -627,25 +636,27 @@ button {
 	margin: 0 auto;
 }
 
-.btn:hover {
-	color: #fff;
-	background: url("../images/btn-sprite.webp") -10px -10px;
-	text-decoration: none;
+@media screen and (min-width: 992px) {
+	.btn:hover {
+		color: #fff;
+		box-shadow: inset 0 0 15px 5px var(--additional-accent-color);
+	}
 }
 
 table {
 	width: 100%;
 	max-width: 750px;
 	margin: 1.5em auto;
-	border: 1px solid #1d5509;
+	border: 1px solid var(--additional-accent-color);
 	border-spacing: 0;
 	border-collapse: collapse;
 	font-size: .9em;
 }
 
 table td {
-	border: 1px solid #1d5509;
+	border: 1px solid var(--additional-accent-color);
 	padding: 15px;
+	font-size: 1.2em;
 }
 
 ul, ol {
@@ -656,7 +667,7 @@ ul, ol {
 
 .header {
 	padding: 20px;
-	background-color: #368013;
+	background-color: var(--main-accent-color);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -667,7 +678,7 @@ ul, ol {
 	width: 100%;
 	max-width: 100%;
 	z-index: 2;
-	transition: all .3s ease;
+	transition: all .8s ease;
 }
 
 .header .logo {
@@ -680,7 +691,7 @@ ul, ol {
 .header .logo-img {
 	height: 90px;
 	width: auto;
-	transition: all .3s ease;
+	transition: all .8s ease;
 }
 
 .header.active {
@@ -731,7 +742,7 @@ ul, ol {
 
 @media screen and (min-width: 992px) {
 	.main-menu__item a:hover {
-		color: #fefd32;
+		color: var(--additional-accent-color);
 	}
 }
 
@@ -742,12 +753,12 @@ ul, ol {
 		top: calc(100% + 15px);
 		left: -400px;
 		width: 300px;
-		background: #368013;
+		background: var(--main-accent-color);
 		padding: 0;
 		margin: 0;
 		align-items: flex-start;
 		border-radius: 10px;
-		transition: all .3s ease;
+		transition: all .8s ease;
 	}
 	.main-menu.active {
 		display: flex;
@@ -758,14 +769,26 @@ ul, ol {
 		width: 100%;
 	}
 	.main-menu__item:focus {
-		background-color: #1d5509;
+		background-color: var(--additional-accent-color);
 	}
+}
+
+.search-icon {
+	cursor: pointer;
+	margin-left: 10px;
 }
 
 .search-icon svg {
 	width: 40px;
 	height: 40px;
 	stroke: #fff;
+	transition: all .8s ease;
+}
+
+@media screen and (min-width: 992px) {
+	.search-icon:hover svg {
+		stroke: var(--additional-accent-color);
+	}
 }
 
 .mobile-menu-icon {
@@ -792,7 +815,7 @@ ul, ol {
 	right: -400px;
 	padding: 7px;
 	background-color: #368013;
-	transition: right 1s ease;
+	transition: right .8s ease;
 	box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.9);
 	border-radius: 23px;
 	display: flex;
@@ -816,8 +839,9 @@ ul, ol {
 	font-size: 14px;
 }
 
-.search button {
+.search-button {
 	padding: 5px;
+	cursor: pointer;
 }
 
 .search svg {
@@ -879,7 +903,7 @@ ul, ol {
 	right: 30px;
 	width: 50px;
 	height: 50px;
-	background: #368013;
+	background: var(--main-accent-color);
 	border-radius: 50%;
 	display: flex;
 	justify-content: center;
@@ -892,6 +916,12 @@ ul, ol {
 	.footer .scroll-top {
 		right: 10px;
 		bottom: 10px;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.footer .scroll-top:hover {
+		box-shadow: inset 0 0 15px 5px var(--additional-accent-color);
 	}
 }
 
@@ -945,15 +975,17 @@ ul, ol {
 }
 
 .footer .menu__item a {
+	font-size: 16px;
 	text-decoration: none;
 	text-transform: uppercase;
+	color: #fff;
 	font-weight: 600;
 	transition: all .8s ease;
 }
 
 @media screen and (min-width: 992px) {
 	.footer .menu__item a:hover {
-		color: #fefd32;
+		color: var(--additional-accent-color);
 	}
 }
 
@@ -963,7 +995,7 @@ ul, ol {
 	font-size: 18px;
 	font-weight: 600;
 	text-transform: uppercase;
-	color: #368013;
+	color: var(--main-accent-color);
 }
 
 .footer-logo img {
