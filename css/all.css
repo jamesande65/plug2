@@ -463,6 +463,7 @@ body {
 	color: #000;
 	background: #000;
 	padding-top: 80px;
+	font-family: 'Montserrat', sans-serif;
 }
 
 @media screen and (max-width: 991px) {
@@ -557,26 +558,32 @@ input.placeholder, textarea.placeholder {
 
 h1 {
 	font-size: 3.157em;
+	font-family: 'Play', sans-serif;
 }
 
 h2 {
 	font-size: 2.369em;
+	font-family: 'Play', sans-serif;
 }
 
 h3 {
 	font-size: 1.777em;
+	font-family: 'Play', sans-serif;
 }
 
 h4 {
 	font-size: 1.333em;
+	font-family: 'Play', sans-serif;
 }
 
 h5 {
 	font-size: 1em;
+	font-family: 'Play', sans-serif;
 }
 
 h6 {
 	font-size: 0.75em;
+	font-family: 'Play', sans-serif;
 }
 
 .title {
@@ -624,6 +631,27 @@ button {
 	color: #fff;
 	background: url("../images/btn-sprite.png") -10px -10px;
 	text-decoration: none;
+}
+
+table {
+	width: 100%;
+	max-width: 750px;
+	margin: 1.5em auto;
+	border: 1px solid #1d5509;
+	border-spacing: 0;
+	border-collapse: collapse;
+	font-size: .9em;
+}
+
+table td {
+	border: 1px solid #1d5509;
+	padding: 15px;
+}
+
+ul, ol {
+	font-size: 14px;
+	line-height: 26px;
+	margin-bottom: 20px;
 }
 
 .header {
@@ -684,6 +712,7 @@ button {
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
+	font-family: 'Play', sans-serif;
 }
 
 .main-menu__item {
@@ -692,7 +721,7 @@ button {
 }
 
 .main-menu__item a {
-	font-size: 14px;
+	font-size: 16px;
 	text-decoration: none;
 	text-transform: uppercase;
 	color: #fff;
@@ -894,6 +923,8 @@ button {
 	align-items: center;
 	padding: 0;
 	margin: 0;
+	font-family: 'Play', sans-serif;
+	font-size: 18px;
 }
 
 @media screen and (max-width: 991px) {
@@ -914,7 +945,6 @@ button {
 }
 
 .footer .menu__item a {
-	font-size: 14px;
 	text-decoration: none;
 	text-transform: uppercase;
 	font-weight: 600;
@@ -929,7 +959,8 @@ button {
 
 .footer .copyright {
 	margin: 20px 0;
-	font-size: 14px;
+	font-family: 'Play', sans-serif;
+	font-size: 18px;
 	font-weight: 600;
 	text-transform: uppercase;
 	color: #368013;
