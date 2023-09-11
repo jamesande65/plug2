@@ -3,6 +3,12 @@ $(document).ready(function(){
 	toggleSearch();
 	scrollToTop();
 	mobileMenu();
+
+	$(window).scroll(function() {
+		//calls functions
+		toggleScrollToTop();
+		handleHeaderOnScroll();
+	});
 });
 
 $(window).on('load', function () {
@@ -16,12 +22,6 @@ $(window).on('resize', function () {
 // $(window).load(function() {
 // 	//calls functions
 // });
-
-$(window).scroll(function() {
-	//calls functions
-	toggleScrollToTop();
-	handleHeaderOnScroll();
-});
 
 //FUNCTIONS
 
