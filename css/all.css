@@ -619,7 +619,7 @@ button {
 	position: relative;
 	width: 159px;
 	height: 74px;
-	background: url("../images/btn-sprite.png") -189px -10px;
+	background: url("../images/btn-sprite.webp") -189px -10px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -629,7 +629,7 @@ button {
 
 .btn:hover {
 	color: #fff;
-	background: url("../images/btn-sprite.png") -10px -10px;
+	background: url("../images/btn-sprite.webp") -10px -10px;
 	text-decoration: none;
 }
 
@@ -830,7 +830,7 @@ ul, ol {
 	margin: 0;
 	height: 100%;
 	padding: 80px 10px 40px;
-	background-image: url(../images/logo-bg.png);
+	background-image: url(../images/logo-bg.webp);
 	background-size: 50px;
 	background-position: center;
 	background-attachment: fixed;
@@ -846,7 +846,7 @@ ul, ol {
 .main .container {
 	border-radius: 10px;
 	background-color: #fff;
-	background-image: url(../images/logo-big.png);
+	background-image: url(../images/logo-big.webp);
 	background-size: 600px;
 	background-position: 50% 50%;
 	background-attachment: fixed;
