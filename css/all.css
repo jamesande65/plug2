@@ -394,6 +394,8 @@ ul, ol {
 	.main-menu.active {
 		display: flex;
 		left: 20px;
+		height: calc(100vh - 110px);
+		overflow: auto;
 	}
 	.main-menu__item {
 		padding: 15px;
