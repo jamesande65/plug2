@@ -393,6 +393,7 @@ ul, ol {
 	}
 	.main-menu.active {
 		display: flex;
+		justify-content: flex-start;
 		left: 20px;
 		height: calc(100vh - 110px);
 		overflow: auto;
