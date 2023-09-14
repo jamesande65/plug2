@@ -779,7 +779,7 @@ ul, ol {
 	text-align: left;
 	padding: 0;
 	margin: 0;
-	padding-top: 15px;
+	margin-top: 15px;
 }
 
 .main-menu .submenu-wrapper .submenu li a {
@@ -794,7 +794,9 @@ ul, ol {
 		position: absolute;
 		top: 100%;
 		left: 50%;
+		width: 100%;
 		transform: translateX(-50%);
+		text-align: center;
 	}
 	.main-menu .submenu-wrapper .submenu {
 		display: none;
@@ -803,16 +805,19 @@ ul, ol {
 		left: 50%;
 		transform: translateX(-50%);
 		width: 250px;
+		border-radius: 20px;
+		overflow: hidden;
+		box-shadow: 0 0 6px 0px #000;
 	}
 	.main-menu .submenu-wrapper .submenu li a {
-		background-color: var(--main-accent-color);
+		background-color: #fff;
 	}
 	.main-menu .submenu-wrapper:hover .submenu {
 		display: block;
 	}
 	.main-menu .submenu-wrapper:hover .submenu li a:hover {
-		background-color: var(--additional-accent-color);
-		color: #fff;
+		background-color: #cecece;
+		box-shadow: inset;
 	}
 }
 
