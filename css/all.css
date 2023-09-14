@@ -846,9 +846,8 @@ ul, ol {
 
 .main p {
 	margin-bottom: 20px;
-	font-size: 14px;
-	line-height: 22px;
-	letter-spacing: 1px;
+	font-size: 15px;
+	line-height: 1.9em;
 	font-weight: 400;
 }
 
