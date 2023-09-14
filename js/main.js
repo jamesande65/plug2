@@ -1,6 +1,5 @@
 $(document).ready(function(){
 	//calls functions
-	toggleSearch();
 	scrollToTop();
 	mobileMenu();
 
@@ -24,16 +23,6 @@ $(window).on('resize', function () {
 // });
 
 //FUNCTIONS
-
-// Search panel toggle
-function toggleSearch() {
-	let searchToggleButton = $('.js-search-toggle-button');
-	let search = $('.js-search');
-
-	searchToggleButton.on('click', function() {
-		search.toggleClass('active');
-	})
-}
 
 // Scroll to top button show/hide
 function toggleScrollToTop() {
