@@ -560,6 +560,7 @@ input.placeholder, textarea.placeholder {
 	max-width: 1200px;
 	margin: 0 auto;
 	min-height: 100%;
+	padding: 0 20px;
 }
 
 h1 {
@@ -886,17 +887,13 @@ ul, ol {
 
 .main article {
 	min-height: 100%;
-	margin: 80px 0;
+	margin: 80px 0 0;
 }
 
 @media screen and (max-width: 991px) {
 	.main {
 		padding-bottom: 10px;
 	}
-}
-
-.main .container {
-	border-radius: 10px;
 }
 
 .main p {
