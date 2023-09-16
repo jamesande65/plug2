@@ -56,4 +56,12 @@ function mobileMenu() {
 	mobileMenuButton.on('click', function() {
 		mobileMenu.toggleClass('active');
 	})
+
+	let mobileSubmenuButtons = $('.js-submenu-wrapper>a');
+	mobileSubmenuButtons.length && mobileSubmenuButtons.each((index, item) => {
+		$(item).on('click', e => {
+			e.preventDefault();
+			$(e.target).toggleClass('active');
+		});
+	});
 }

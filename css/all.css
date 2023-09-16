@@ -313,6 +313,9 @@ ul, ol {
 	text-transform: uppercase;
 	color: #000;
 	font-weight: 600;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 	transition: all .8s ease;
 }
 
@@ -374,6 +377,31 @@ ul, ol {
 	.main-menu .submenu-wrapper:hover .submenu li a:hover {
 		background-color: #cecece;
 		box-shadow: inset;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.main-menu .submenu-wrapper > a:after {
+		content: '';
+		background-image: url(../images/chevron-right-svgrepo-com.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+		line-height: 100%;
+		background-size: 25px 25px;
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		text-align: center;
+		transition: transform .4s ease;
+	}
+	.main-menu .submenu-wrapper > a + .submenu {
+		display: none;
+	}
+	.main-menu .submenu-wrapper > a.active:after {
+		transform: rotate(90deg);
+	}
+	.main-menu .submenu-wrapper > a.active + .submenu {
+		display: block;
 	}
 }
 
