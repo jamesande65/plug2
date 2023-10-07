@@ -235,6 +235,251 @@ ul, ol {
 	margin-left: 10px;
 }
 
+.user {
+	margin: 5vh 0;
+}
+
+.user .user-wrapper {
+	display: flex;
+	justify-content: flex-start;
+	padding: 15px;
+	border: 1px solid gray;
+	border-radius: 15px;
+}
+
+.user .user-wrapper .user-photo {
+	width: 15vw;
+}
+
+.user .user-wrapper .user-description {
+	width: 100vw;
+	padding: 0 2vw 0s 0;
+}
+
+.user .user-wrapper .user-description .user-name h3 {
+	color: red;
+	text-decoration: underline;
+}
+
+.author-page {
+	padding: 0 0 7vh;
+}
+
+.author-page .author-wrapper {
+	background-color: gray;
+	padding: 2vw  2vw 2vw 0;
+	margin: 2vw 0 0;
+	border: 1px solid gray;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.author-page .author-wrapper .author-photo {
+	display: inherit;
+	flex-direction: column;
+	padding: 0 1vw;
+	align-items: center;
+	width: 20vw;
+}
+
+.author-page .author-wrapper .author-photo img {
+	display: inherit;
+	width: 20vw;
+}
+
+.author-page .author-wrapper .author-photo .author-links {
+	flex-direction: column;
+	font-size: 2vw;
+}
+
+.author-page .author-wrapper .author-photo .author-links .link-title {
+	display: inline-block;
+}
+
+.author-page .author-wrapper .author-photo .author-links .link-title h5 {
+	font-size: 25px;
+	margin: unset;
+}
+
+.author-page .author-wrapper .author-photo .author-links .link {
+	font-size: 25px;
+	display: inline-block;
+	padding-top: 2vh;
+}
+
+.author-page .author-wrapper .author-description {
+	position: relative;
+	background-color: var(--main-accent-color);
+	width: 60vw;
+	padding: 1vw 2vw;
+}
+
+.author-page .author-wrapper .author-description .profile h5 {
+	padding-top: 1vh;
+	font-size: 1.3vw;
+	margin: 0;
+}
+
+.author-page .author-wrapper .author-description .profile-text p {
+	font-size: 15px;
+}
+
+.author-page .author-posts {
+	border-top: 1px solid var(--main-accent-color);
+	background-color: gray;
+	padding: 5vh 0;
+}
+
+.author-page .author-posts .posts-title {
+	padding: 0vh 2vw 0;
+}
+
+.author-page .author-posts .posts-title h2 {
+	margin-top: 0;
+}
+
+.author-page .author-posts .posts-history {
+	padding: 0 2vw;
+}
+
+.author-page .author-posts .posts-history .history-item {
+	padding: 0.5vw;
+	display: inline-block;
+}
+
+.author-page .author-posts .posts-history .history-item a {
+	font-size: 25px;
+}
+
+.author-page .author-posts .posts-history .history-item span {
+	font-size: 25px;
+}
+
+.promo-code {
+	background-color: rgba(218, 218, 218, 0.6);
+	padding: 1vw;
+}
+
+.promo-code .promo-wrapper {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: initial;
+	border: 1px solid gray;
+	background-color: white;
+	border-radius: 5px;
+}
+
+.promo-code .promo-wrapper .promo-block {
+	padding: 1vw;
+}
+
+.promo-code .promo-wrapper .promo-block .logo img {
+	max-width: 6vw;
+}
+
+.promo-code .promo-wrapper .promo-block .title h5 {
+	font-size: 1vw;
+	color: #370083;
+	margin-bottom: unset;
+}
+
+.promo-code .promo-wrapper .promo-block .title h3 {
+	font-size: 1.5vw;
+}
+
+.promo-code .promo-wrapper .promo-block .stars {
+	display: flex;
+	align-items: center;
+}
+
+.promo-code .promo-wrapper .promo-block .stars img {
+	width: 1.5vw;
+}
+
+.promo-code .promo-wrapper .promo-block .stars .rate {
+	display: inline-block;
+}
+
+.promo-code .promo-wrapper .promo-block .promo-title {
+	font-size: 1.5vw;
+}
+
+.promo-code .promo-wrapper .promo-block .promo-anchor {
+	width: -moz-fit-content;
+	width: fit-content;
+	background-color: white;
+	position: relative;
+	left: 3vw;
+	top: 1vh;
+	z-index: 1;
+	padding: 0 1vw;
+}
+
+.promo-code .promo-wrapper .promo-block .promo-anchor span {
+	font-size: 0.7vw;
+	color: green;
+}
+
+.promo-code .promo-wrapper .promo-block .promo-btn {
+	position: relative;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	border: 1px dashed green;
+	padding: 1vw;
+	border-radius: 2vw;
+	width: 20vw;
+}
+
+.promo-code .promo-wrapper .promo-block .promo-btn .copy-btn {
+	display: inherit;
+	position: absolute;
+	right: 1vw;
+}
+
+.promo-code .promo-wrapper .promo-block .promo-btn .copy-btn img {
+	width: 2vw;
+}
+
+.promo-code .promo-wrapper .promo-block .option-item {
+	display: flex;
+	align-items: center;
+	margin: 2vh 0;
+}
+
+.promo-code .promo-wrapper .promo-block .option-item span {
+	padding-left: 0.5vw;
+}
+
+.promo-code .promo-wrapper .promo-block .option-item img {
+	width: 1.5vw;
+}
+
+.promo-code .promo-wrapper .promo-logo {
+	min-width: -moz-fit-content;
+	min-width: fit-content;
+}
+
+.promo-code .promo-wrapper .activate-promo {
+	max-width: 22vw;
+	position: relative;
+}
+
+.promo-code .promo-wrapper .promo-option {
+	padding: 1.2vw 0.5vw 1.2vw 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.promo-code .promo-wrapper .promo-send .send-btn {
+	background-color: red;
+	color: wheat;
+	padding: 1vh 2vw;
+	font-size: 1vw;
+}
+
 .header {
 	padding: 20px;
 	background-color: #fff;
@@ -460,7 +705,6 @@ ul, ol {
 	background-attachment: fixed;
 	background-repeat: repeat;
 	background-color: #fff;
-	background-image: url(../images/logo-big.webp);
 	background-size: 600px;
 	background-position: 50% 50%;
 	background-attachment: fixed;
