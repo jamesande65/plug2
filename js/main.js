@@ -2,6 +2,7 @@ $(document).ready(function(){
 	//calls functions
 	scrollToTop();
 	mobileMenu();
+	promoCodeCopy();
 
 	$(window).scroll(function() {
 		//calls functions
@@ -9,18 +10,6 @@ $(document).ready(function(){
 		handleHeaderOnScroll();
 	});
 });
-
-$(window).on('load', function () {
-	//calls functions
-});
-
-$(window).on('resize', function () {
-	//calls functions
-});
-
-// $(window).load(function() {
-// 	//calls functions
-// });
 
 //FUNCTIONS
 
@@ -64,4 +53,20 @@ function mobileMenu() {
 			$(e.target).toggleClass('active');
 		});
 	});
+}
+
+function promoCodeCopy() {
+	if ($('.js-promo-code-wrapper').length) {
+		$('.js-promo-code-copy').on('click', function(e) {
+			e.stopPropagation();
+			let value = $(e.target.closest('.js-promo-code-wrapper')).find('.js-promo-code').text();
+
+			var $temp = $("<input>");
+				$("body").append($temp);
+				$temp.val(value).select();
+				document.execCommand("copy");
+				$temp.remove();
+			// console.log($(e.target.closest('.js-promo-code-wrapper')).find('.js-promo-code'));
+		})
+	}
 }
