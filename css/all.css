@@ -236,7 +236,7 @@ ul, ol {
 }
 
 .user {
-	margin: 5vh 0;
+	margin: 20px 0 0;
 }
 
 .user .user-wrapper {
@@ -262,34 +262,34 @@ ul, ol {
 }
 
 .author-page {
-	padding: 0 0 7vh;
+	margin: 0 0 40px;
 }
 
 .author-page .author-wrapper {
 	background-color: gray;
-	padding: 2vw  2vw 2vw 0;
+	padding: 10px;
 	margin: 2vw 0 0;
 	border: 1px solid gray;
 	display: flex;
-	justify-content: space-evenly;
 }
 
 .author-page .author-wrapper .author-photo {
 	display: inherit;
 	flex-direction: column;
-	padding: 0 1vw;
+	margin-right: 10px;
 	align-items: center;
-	width: 20vw;
+	width: 200px;
+	flex-shrink: 0;
 }
 
 .author-page .author-wrapper .author-photo img {
 	display: inherit;
-	width: 20vw;
+	width: 100%;
 }
 
 .author-page .author-wrapper .author-photo .author-links {
 	flex-direction: column;
-	font-size: 2vw;
+	font-size: 20px;
 }
 
 .author-page .author-wrapper .author-photo .author-links .link-title {
@@ -297,67 +297,107 @@ ul, ol {
 }
 
 .author-page .author-wrapper .author-photo .author-links .link-title h5 {
-	font-size: 25px;
 	margin: unset;
 }
 
 .author-page .author-wrapper .author-photo .author-links .link {
-	font-size: 25px;
 	display: inline-block;
 	padding-top: 2vh;
+}
+
+@media screen and (max-width: 991px) {
+	.author-page .author-wrapper .author-photo .author-links {
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.author-page .author-wrapper .author-photo {
+		margin-bottom: 20px;
+	}
 }
 
 .author-page .author-wrapper .author-description {
 	position: relative;
 	background-color: var(--main-accent-color);
-	width: 60vw;
 	padding: 1vw 2vw;
+	flex-shrink: 1;
 }
 
 .author-page .author-wrapper .author-description .profile h5 {
 	padding-top: 1vh;
-	font-size: 1.3vw;
+	font-size: 24px;
 	margin: 0;
+}
+
+@media screen and (max-width: 991px) {
+	.author-page .author-wrapper .author-description .profile h5 {
+		font-size: 18px;
+	}
 }
 
 .author-page .author-wrapper .author-description .profile-text p {
 	font-size: 15px;
 }
 
+@media screen and (max-width: 991px) {
+	.author-page .author-wrapper .author-description .profile-text p {
+		font-size: 12px;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.author-page .author-wrapper {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
 .author-page .author-posts {
 	border-top: 1px solid var(--main-accent-color);
 	background-color: gray;
-	padding: 5vh 0;
-}
-
-.author-page .author-posts .posts-title {
-	padding: 0vh 2vw 0;
+	padding: 20px;
 }
 
 .author-page .author-posts .posts-title h2 {
 	margin-top: 0;
+	font-size: 20px;
 }
 
-.author-page .author-posts .posts-history {
-	padding: 0 2vw;
+@media screen and (max-width: 991px) {
+	.author-page .author-posts .posts-title h2 {
+		font-size: 16px;
+	}
 }
 
 .author-page .author-posts .posts-history .history-item {
-	padding: 0.5vw;
 	display: inline-block;
 }
 
 .author-page .author-posts .posts-history .history-item a {
-	font-size: 25px;
+	font-size: 20px;
+}
+
+@media screen and (max-width: 991px) {
+	.author-page .author-posts .posts-history .history-item a {
+		font-size: 16px;
+	}
 }
 
 .author-page .author-posts .posts-history .history-item span {
-	font-size: 25px;
+	font-size: 20px;
+}
+
+@media screen and (max-width: 991px) {
+	.author-page .author-posts .posts-history .history-item span {
+		font-size: 16px;
+	}
 }
 
 .promo-code {
 	background-color: rgba(218, 218, 218, 0.6);
 	padding: 1vw;
+	margin: 20px 0;
 }
 
 .promo-code .promo-wrapper {
@@ -436,6 +476,7 @@ ul, ol {
 	display: inherit;
 	position: absolute;
 	right: 1vw;
+	cursor: pointer;
 }
 
 .promo-code .promo-wrapper .promo-block .promo-btn .copy-btn img {
