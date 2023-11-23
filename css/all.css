@@ -536,6 +536,19 @@ ul, ol {
 	}
 }
 
+.language-picker {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.language-picker select {
+	border: none;
+	outline: none;
+	background: none;
+	cursor: pointer;
+	font-size: 25px;
+}
+
 .menu {
 	display: flex;
 	align-items: center;
