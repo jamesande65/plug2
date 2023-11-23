@@ -1,66 +1,76 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Fortune Tiger</title>
-        <link rel="icon" type="image/x-icon" href="fortunetiger.ico">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
-        <style>
-            :root {
-                --main-accent-color: #f69a0c;
-                --additional-accent-color: #d00e1d;
-            }
-        </style>
-        <link rel="stylesheet" type="text/css" href="css/all.css" media="all">
-    </head>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Fortune Tiger</title>
+		<link rel="icon" type="image/x-icon" href="fortunetiger.ico" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet" />
+		<style>
+			:root {
+				--main-accent-color: #f69a0c;
+				--additional-accent-color: #d00e1d;
+			}
+		</style>
+		<link rel="stylesheet" type="text/css" href="css/all.css" media="all" />
+	</head>
 
-    <body>
-        <div class="wrapper">
-            <div class="header js-header">
-                <a href="/" title="pageTitle" class="logo">
-                    <img src="./images/logo.webp" alt="pageTitle" class="logo-img" width="70" height="70">
-                </a>
-                <div class="menu">
-
-                    <ul class="main-menu js-mobile-menu">
-                        <li class="main-menu__item">
-                            <a href="/">Fortune Tiger</a>
-                        </li>
-                        <li class="main-menu__item submenu-wrapper js-submenu-wrapper">
-                            <a href="/">Where to play</a>
-                            <ul class="submenu">
-                                <li><a href="/">Test 1</a></li>
-                                <li><a href="/">Test 2</a></li>
-                                <li><a href="/">Test 3</a></li>
-                                <li><a href="/">Test 4</a></li>
-                            </ul>
-                        </li>
-                        <li class="main-menu__item">
-                            <a href="/">How to play</a>
-                        </li>
-                        <li class="main-menu__item">
-                            <a href="/">Politica de Cookies</a>
-                        </li>
-                        <li class="main-menu__item submenu-wrapper js-submenu-wrapper">
-                            <a href="404.html">404 page</a>
-                            <ul class="submenu">
-                                <li><a href="/">Test 1</a></li>
-                                <li><a href="/">Test 2</a></li>
-                                <li><a href="/">Test 3</a></li>
-                                <li><a href="/">Test 4</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <div class="mobile-menu-icon js-mobile-menu-toggle">
-                        <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M4 6H20M4 12H20M4 18H20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </div>
-                </div>
-            </div>
+	<body>
+		<div class="wrapper">
+			<div class="header js-header">
+				<a href="/" title="pageTitle" class="logo">
+					<img src="./images/logo.webp" alt="pageTitle" class="logo-img" width="70" height="70" />
+				</a>
+				<div class="menu">
+					<ul class="main-menu js-mobile-menu">
+					    <li class="main-menu__item">
+					        <a href="/">Fortune Tiger</a>
+					    </li>
+					    <li class="main-menu__item submenu-wrapper js-submenu-wrapper">
+					        <a href="/">Where to play</a>
+					        <ul class="submenu">
+					            <li><a href="/">Test 1</a></li>
+					            <li><a href="/">Test 2</a></li>
+					            <li><a href="/">Test 3</a></li>
+					            <li><a href="/">Test 4</a></li>
+					        </ul>
+					    </li>
+					    <li class="main-menu__item">
+					        <a href="/">How to play</a>
+					    </li>
+					    <li class="main-menu__item">
+					        <a href="/">Politica de Cookies</a>
+					    </li>
+					    <li class="main-menu__item submenu-wrapper js-submenu-wrapper">
+					        <a href="404.html">404 page</a>
+					        <ul class="submenu">
+					            <li><a href="/">Test 1</a></li>
+					            <li><a href="/">Test 2</a></li>
+					            <li><a href="/">Test 3</a></li>
+					            <li><a href="/">Test 4</a></li>
+					        </ul>
+					    </li>
+					</ul>
+					<div class="mobile-menu-icon js-mobile-menu-toggle">
+						<svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M4 6H20M4 12H20M4 18H20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						</svg>
+					</div>
+				</div>
+				<div class="language-picker js-language-picker">
+					<form action="" class="language-picker__form">
+						<select name="language-picker-select" id="language-picker-select">
+							<option lang="de" value="deutsch">🇩🇪</option>
+							<option lang="en" value="english" selected>🇬🇧</option>
+							<option lang="fr" value="francais">🇫🇷</option>
+							<option lang="it" value="italiano">🇮🇹</option>
+							<!-- other language options -->
+						</select>
+					</form>
+				</div>
+			</div>
 
         <div class="main" style="background-image: url(../images/logo-big.webp);">
             <div class="main-wrapper">
