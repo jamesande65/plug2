@@ -3,6 +3,7 @@ $(document).ready(function(){
 	scrollToTop();
 	mobileMenu();
 	promoCodeCopy();
+	lang();
 
 	$(window).scroll(function() {
 		//calls functions
@@ -69,4 +70,21 @@ function promoCodeCopy() {
 			// console.log($(e.target.closest('.js-promo-code-wrapper')).find('.js-promo-code'));
 		})
 	}
+}
+
+function lang() {
+	//lang
+	const lang = document.querySelector('#lang');
+	const langLis = document.querySelectorAll('#lang li');
+	const langBtn = document.querySelector('.dropbtn');
+
+	langBtn.addEventListener('click', () => {
+		lang.classList.toggle('show');
+	});
+
+	langLis.forEach(element => {
+		element.addEventListener('click', (e) => {
+			langBtn.innerHTML = e.target.closest('a').innerHTML;
+		})
+	});
 }

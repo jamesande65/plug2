@@ -493,6 +493,87 @@ ul, ol {
 	}
 }
 
+.rew_header {
+	margin-top: 0;
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+.one_com {
+	padding: 21px;
+	border: solid 1px #d7d7d7;
+	border-radius: 5px;
+	margin-bottom: 17px;
+	display: grid;
+	grid-template-columns: 1fr 200px;
+	grid-column-gap: 20px;
+	align-items: center;
+}
+
+.com_cnt .one_com:not(:first-child) {
+	margin-bottom: 0;
+}
+
+.com_name {
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+.one_com .flx {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.com_stars {
+	display: flex;
+}
+
+.star {
+	opacity: 0.5;
+	background-image: url(/images/star.svg);
+	width: 15px;
+	height: 15px;
+	background-size: cover;
+}
+
+.s_1 .star:nth-child(1) {
+	opacity: 1;
+}
+
+.s_2 .star:nth-child(1), .s_2 .star:nth-child(2) {
+	opacity: 1;
+}
+
+.s_3 .star:nth-child(1), .s_3 .star:nth-child(2), .s_3 .star:nth-child(3) {
+	opacity: 1;
+}
+
+.s_4 .star:nth-child(1), .s_4 .star:nth-child(2), .s_4 .star:nth-child(3), .s_4 .star:nth-child(4) {
+	opacity: 1;
+}
+
+.s_5 .star:nth-child(1), .s_5 .star:nth-child(2), .s_5 .star:nth-child(3), .s_5 .star:nth-child(4), .s_5 .star:nth-child(5) {
+	opacity: 1;
+}
+
+.com_text {
+	margin-top: 13px;
+}
+
+.com_text p:last-child {
+	margin-bottom: 0;
+}
+
+.one_rew_img {
+	width: 200px;
+	max-width: 200px;
+	min-width: 200px;
+	border-radius: 5px;
+	display: block;
+}
+
 .header {
 	padding: 20px;
 	background-color: #fff;
@@ -536,18 +617,42 @@ ul, ol {
 		width: auto;
 	}
 }
-
-.language-picker {
+.header-lang {
 	display: flex;
-	justify-content: flex-end;
 	align-items: center;
+	justify-content: center;
 }
-.language-picker select {
-	border: none;
-	outline: none;
-	background: none;
-	cursor: pointer;
-	font-size: 25px;
+.header .dropdown {
+	position: relative;
+	display: inline-block;
+}
+.header .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #091920;
+	overflow: auto;
+	padding: 0;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+	z-index: 1;
+	padding: 2px;
+	border: 1px solid #fff;
+	border-radius: 3px;
+}
+.header .dropdown-content li {
+	color: #000;
+	padding: 0;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 3px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.header .dropdown-content li:hover {
+	background-color: #ddd;
+}
+.header .show {
+	display: block;
 }
 
 .menu {
